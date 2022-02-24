@@ -1,0 +1,13 @@
+package com.syp.domain.vo;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class categoryVo {
+    private long id;
+    private String name;
+}

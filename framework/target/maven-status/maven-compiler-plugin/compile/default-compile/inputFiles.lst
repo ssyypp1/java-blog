@@ -1,4 +1,15 @@
-E:\mavenproject\blog\framework\src\main\java\com\syp\mapper\ArticleMapper.java
+E:\mavenproject\blog\framework\src\main\java\com\syp\service\impl\CategoryServiceImpl.java
+E:\mavenproject\blog\framework\src\main\java\com\syp\utils\BeanCopyUtils.java
+E:\mavenproject\blog\framework\src\main\java\com\syp\mapper\CategoryMapper.java
 E:\mavenproject\blog\framework\src\main\java\com\syp\service\ArticleService.java
-E:\mavenproject\blog\framework\src\main\java\com\syp\service\ArtcleServiceImpl.java
+E:\mavenproject\blog\framework\src\main\java\com\syp\config\WebConfig.java
+E:\mavenproject\blog\framework\src\main\java\com\syp\constants\SystemConstants.java
+E:\mavenproject\blog\framework\src\main\java\com\syp\domain\ResponseResult.java
+E:\mavenproject\blog\framework\src\main\java\com\syp\service\impl\ArtcleServiceImpl.java
+E:\mavenproject\blog\framework\src\main\java\com\syp\domain\vo\HotArticleVo.java
+E:\mavenproject\blog\framework\src\main\java\com\syp\mapper\ArticleMapper.java
+E:\mavenproject\blog\framework\src\main\java\com\syp\service\CategoryService.java
+E:\mavenproject\blog\framework\src\main\java\com\syp\domain\vo\categoryVo.java
 E:\mavenproject\blog\framework\src\main\java\com\syp\domain\entity\Article.java
+E:\mavenproject\blog\framework\src\main\java\com\syp\domain\entity\Category.java
+E:\mavenproject\blog\framework\src\main\java\com\syp\enums\AppHttpCodeEnum.java

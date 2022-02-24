@@ -1,4 +1,3 @@
-com\syp\service\ArtcleServiceImpl.class
+com\syp\mapper\ArticleMapper.class
 com\syp\service\ArticleService.class
 com\syp\domain\entity\Article.class
-com\syp\mapper\ArticleMapper.class
