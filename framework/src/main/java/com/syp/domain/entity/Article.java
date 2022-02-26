@@ -1,7 +1,11 @@
 package com.syp.domain.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 import java.io.Serializable;
@@ -13,6 +17,9 @@ import java.io.Serializable;
  * @since 2022-02-19 10:23:05
  */
 @SuppressWarnings("serial")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @TableName("sg_article")
 public class Article {
     @TableId
@@ -25,6 +32,9 @@ public class Article {
     private String summary;
     //所属分类id
     private Long categoryId;
+    //分类名
+    @TableField(exist = false)
+    private String categoryName;
     //缩略图
     private String thumbnail;
     //是否置顶（0否，1是）
