@@ -2,14 +2,18 @@ package com.syp.domain;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.syp.enums.AppHttpCodeEnum;
+import lombok.Data;
 
 import java.io.Serializable;
 
+@Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ResponseResult<T> implements Serializable {
     private Integer code;
     private String msg;
     private T data;
+    private String abc="123";//必须有setter和geter方法不然没办法转为json
+
     public ResponseResult() {//无参构造
         this.code = AppHttpCodeEnum.SUCCESS.getCode();
         this.msg = AppHttpCodeEnum.SUCCESS.getMsg();
@@ -115,7 +119,5 @@ public class ResponseResult<T> implements Serializable {
     public void setData(T data) {
         this.data = data;
     }
-
-
 
 }

@@ -1,4 +1,0 @@
-com\syp\config\MbatisPlusConfig.class
-com\syp\mapper\ArticleMapper.class
-com\syp\service\ArticleService.class
-com\syp\domain\entity\Article.class
