@@ -16,6 +16,7 @@ import java.util.Objects;
 public class UserServiceDeatilImpl implements UserDetailsService {
     @Autowired
     private UserMapper userMapper;
+
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         LambdaQueryWrapper<User> query=new LambdaQueryWrapper<>();
@@ -23,6 +24,7 @@ public class UserServiceDeatilImpl implements UserDetailsService {
         User user = userMapper.selectOne(query);
         if(Objects.isNull(user))
             throw new RuntimeException("用户名或密码错误");
+        //返回值要实现userdetails这个接口
         return new LoginUser(user);
     }
 }

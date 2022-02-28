@@ -20,6 +20,7 @@ public class SecuityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter;
 
+    //获取AuthenticationManager对象
     @Override
     @Bean
     public AuthenticationManager authenticationManagerBean() throws Exception {
@@ -40,9 +41,10 @@ public class SecuityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 // 对于登录接口 允许匿名访问
                 .antMatchers("/login").anonymous()
+                //logout接口需要携带token
+                .antMatchers("/logout").authenticated()
                 // 除上面外的所有请求全部不需要认证即可访问
                 .anyRequest().permitAll();
-
 
         http.logout().disable();
         http.addFilterBefore(jwtAuthenticationTokenFilter, UsernamePasswordAuthenticationFilter.class);

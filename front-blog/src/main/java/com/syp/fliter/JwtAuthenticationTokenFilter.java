@@ -46,6 +46,7 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
             //token超时  token非法
             //响应告诉前端需要重新登录
             ResponseResult result = ResponseResult.errorResult(AppHttpCodeEnum.NEED_LOGIN);
+            //filter中不能直接返回responseresult因为无法转为Json
             WebUtils.renderString(response, JSON.toJSONString(result));
             return;
         }

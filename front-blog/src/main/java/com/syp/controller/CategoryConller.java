@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@RestController//因为这个注解responseresult会被封装成json写入响应体
 @RequestMapping("/category")
 public class CategoryConller {
 
